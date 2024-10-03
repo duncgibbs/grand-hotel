@@ -9,7 +9,19 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Grand Hotel.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Grand Hotel" startnode="1" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="186476DB-4E98-4CA7-A993-418CC6E4D35C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Prologue 1" tags="" position="900,375" size="100,100">You have no idea why, but you&#39;re sure you were just dead. Or asleep? You&#39;re definitely waking up now. You appear to be in the backseat of a car. It takes you longer than you&#39;d care to admit to realize where you are because the road is unnaturally smooth. You look out the window to try and figure out what&#39;s going. Or at least where you are... Maybe how fast you&#39;re going?
+<tw-storydata name="Grand Hotel" startnode="20" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="186476DB-4E98-4CA7-A993-418CC6E4D35C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@font-face {
+	font-family: "Jost";
+    src: url("jost/jost-book.otf");
+}
+@font-face {
+    font-family: "Jost";
+    src: url("jost/jost-book-italic.otf");
+	font-style: italic;
+}
+
+tw-story {
+	font-family: "Jost";
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Prologue 1" tags="" position="900,375" size="100,100">You have no idea why, but you&#39;re sure you were just dead. Or asleep? You&#39;re definitely waking up now. You appear to be in the backseat of a car. It takes you longer than you&#39;d care to admit to realize where you are because the road is unnaturally smooth. You look out the window to try and figure out what&#39;s going. Or at least where you are... Maybe how fast you&#39;re going?
 
 It&#39;s an opaque evening, though the exact angle of the setting sun is frustratingly impossible to calculate. Through the dense fog you can see the lines on the road going by blurrily. Though the sources remain just out of view, lights overhead appear to slide down the body of the car. Illuminating first the headlights which swell above the front of the car like raised eyebrows, then the faintly reflective black paint on the hood of the car, then the smooth face of the tired driver, then the vinyl grey of the seats which blend in smoothly with your grey suit and slacks, and then finally the trunk before disappearing into the dark fog.
 
@@ -95,7 +107,7 @@ As your hand reaches for the handle, the driver offers, &quot;Good luck, ($playe
 
 The metal handle is cold to the touch despite it being a neutral temperature in the car. Have door handles always been this heavy?
 
-[[Leave|Chapter 1.1]]</tw-passagedata><tw-passagedata pid="14" name="Chapter 1.1" tags="" position="900,1650" size="100,100">The tall, blonde woman - lighting a cigarette beside the massive, revolving entrance and wearing an identical suit to the one you are - is the //second// thing you notice.
+[[Leave|Chapter 1.1]]</tw-passagedata><tw-passagedata pid="14" name="Chapter 1.1" tags="" position="500,1650" size="100,100">The tall, blonde woman - lighting a cigarette beside the massive, revolving entrance and wearing an identical suit to the one you are - is the //second// thing you notice.
 
 The first, is the massive building the covers your entire field of vision. Up close, you can see that the first floor, which is 20 feet tall, is made of grey brick. To either side of the entrance, massive awnings cover massive windows and stretch as far as you can see. Above the first floor, identical rows of windows stand out from the smooth grey wall. Dozens of floors up, green-patinaed copper tiles form a small roof where the building narrows to support the weight of the floors above it.
 
@@ -180,7 +192,12 @@ You both walk into the revolving door and into the Grand Hotel.
 
 
 \\[\\[To be continued.]]
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="20" name="Title" tags="" position="575,575" size="100,100">&#39;&#39;The Grand Hotel&#39;&#39;
+
+by Duncan Gibbs
+
+[[Prologue|Prologue 1]]
+[[Chapter 1|Chapter 1.1]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
