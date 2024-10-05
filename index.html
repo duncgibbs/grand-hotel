@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Grand Hotel.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Grand Hotel" startnode="20" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="186476DB-4E98-4CA7-A993-418CC6E4D35C" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@font-face {
+<tw-storydata name="Grand Hotel" startnode="20" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="186476DB-4E98-4CA7-A993-418CC6E4D35C" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@font-face {
 	font-family: "Jost";
     src: url("jost/jost-book.otf");
 }
@@ -18,10 +18,15 @@
     src: url("jost/jost-book-italic.otf");
 	font-style: italic;
 }
+@font-face {
+    font-family: "Jost";
+    src: url("jost/jost-book-bold.otf");
+	font-style: bold;
+}
 
 tw-story {
 	font-family: "Jost";
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Prologue 1" tags="" position="900,375" size="100,100">You have no idea why, but you&#39;re sure you were just dead. Or asleep? You&#39;re definitely waking up now. You appear to be in the backseat of a car. It takes you longer than you&#39;d care to admit to realize where you are because the road is unnaturally smooth. You look out the window to try and figure out what&#39;s going. Or at least where you are... Maybe how fast you&#39;re going?
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Prologue 1" tags="" position="250,425" size="100,100">You have no idea why, but you&#39;re sure you were just dead. Or asleep? You&#39;re definitely waking up now. You appear to be in the backseat of a car. It takes you longer than you&#39;d care to admit to realize where you are because the road is unnaturally smooth. You look out the window to try and figure out what&#39;s going. Or at least where you are... Maybe how fast you&#39;re going?
 
 It&#39;s an opaque evening, though the exact angle of the setting sun is frustratingly impossible to calculate. Through the dense fog you can see the lines on the road going by blurrily. Though the sources remain just out of view, lights overhead appear to slide down the body of the car. Illuminating first the headlights which swell above the front of the car like raised eyebrows, then the faintly reflective black paint on the hood of the car, then the smooth face of the tired driver, then the vinyl grey of the seats which blend in smoothly with your grey suit and slacks, and then finally the trunk before disappearing into the dark fog.
 
@@ -30,11 +35,11 @@ Wait, driver?!
 &quot;Hello,&quot; greets the man gruffly, raising one hand off the steering wheel in greeting.
 
 [[Respond, &quot;Hello.&quot;|Prologue 2.1]]
-[[Say nothing.|Prologue 2.2]]</tw-passagedata><tw-passagedata pid="2" name="Prologue 2.1" tags="" position="1025,500" size="100,100">He smiles at the cordiality.
+[[Say nothing.|Prologue 2.2]]</tw-passagedata><tw-passagedata pid="2" name="Prologue 2.1" tags="" position="200,575" size="100,100">He smiles at the cordiality.
 
-[[Next|Prologue 3]]</tw-passagedata><tw-passagedata pid="3" name="Prologue 2.2" tags="" position="900,500" size="100,100">Something sticks in your throat. Your own throat probably. You think it&#39;s best not to say anything anyway.
+[[Next|Prologue 3]]</tw-passagedata><tw-passagedata pid="3" name="Prologue 2.2" tags="" position="325,575" size="100,100">Something sticks in your throat. Your own throat probably. You think it&#39;s best not to say anything anyway.
 
-[[Next|Prologue 3]]</tw-passagedata><tw-passagedata pid="4" name="Prologue 3" tags="" position="1025,625" size="100,100">&quot;What exactly do you remember?&quot; the driver asks you, turning his head slightly as he does. A light drifts over the car and lights up his barely-there smile. The man in the driver&#39;s seat is middle aged, or possibly older but looking great. (You&#39;d rather not consider the other option, as it makes you sad to think about.) He wears a nondescript button up shirt and a hat that doesn&#39;t necessarily scream but at least says &quot;taxi driver&quot; in an outdoor voice. In fact, his entire countenance appears to be designed to communicate &quot;taxi driver&quot; to you. The seeds of suspicion in you begin to crack their shells.
+[[Next|Prologue 3]]</tw-passagedata><tw-passagedata pid="4" name="Prologue 3" tags="" position="275,825" size="100,100">&quot;What exactly do you remember?&quot; the driver asks you, turning his head slightly as he does. A light drifts over the car and lights up his barely-there smile. The man in the driver&#39;s seat is middle aged, or possibly older but looking great. (You&#39;d rather not consider the other option, as it makes you sad to think about.) He wears a nondescript button up shirt and a hat that doesn&#39;t necessarily scream but at least says &quot;taxi driver&quot; in an outdoor voice. In fact, his entire countenance appears to be designed to communicate &quot;taxi driver&quot; to you. The seeds of suspicion in you begin to crack their shells.
 
 &quot;Do you at least remember your name?&quot; he suggests as if speaking to a surprisingly smart dog.
 
@@ -44,7 +49,7 @@ Wait, driver?!
         (go-to:&quot;Name 1&quot;)
     ]
 	(set: $playerName to (prompt: [Enter your name:], &quot;&quot;, &quot;Cancel&quot;, &quot;Confirm&quot;))
-]</tw-passagedata><tw-passagedata pid="5" name="Name 1" tags="" position="1025,750" size="100,100">Are you sure? You can be called anything. You can have any name. You can be anyone. Are you sure you want to be $playerName?
+]</tw-passagedata><tw-passagedata pid="5" name="Name 1" tags="" position="275,950" size="100,100">Are you sure? Look,  no judgement. I like $playerName. I just feel like before you pick you should know that you can be called anything in the world or out of it. You can have any name. You can be anyone. Are you sure you want to be $playerName?
 
 One more time, what&#39;s your name?
 
@@ -55,21 +60,21 @@ One more time, what&#39;s your name?
 (event: when $playerName is not &quot;&quot;)[
 	(go-to:&quot;Name 2&quot;)
 ]
-]</tw-passagedata><tw-passagedata pid="6" name="Name 2" tags="" position="1025,875" size="100,100">&quot;I&#39;m just going to call you &#39;Chief,&#39; if that works for you?&quot; the driver asks you.
+]</tw-passagedata><tw-passagedata pid="6" name="Name 2" tags="" position="275,1075" size="100,100">&quot;I&#39;m just going to call you &#39;Chief,&#39; if that works for you?&quot; the driver asks you.
 
 [[&quot;That works for me.&quot;|Prologue 4]]
-[[&quot;I&#39;d rather you didn&#39;t.&quot;|Prologue 4]]</tw-passagedata><tw-passagedata pid="7" name="Prologue 4" tags="" position="1025,1025" size="100,100">The ur taxi driver says, &quot;I&#39;ve got good news and bad news, $playerName. Which do you want first?&quot;
+[[&quot;I&#39;d rather you didn&#39;t.&quot;|Prologue 4]]</tw-passagedata><tw-passagedata pid="7" name="Prologue 4" tags="" position="275,1225" size="100,100">The ur taxi driver says, &quot;I&#39;ve got good news and bad news, Chief. Which do you want first?&quot;
 
 [[&quot;Good News.&quot;|Prologue 5.1]]
-[[&quot;Bad News.&quot;|Prologue 5.2]]</tw-passagedata><tw-passagedata pid="8" name="Prologue 5.1" tags="" position="900,1150" size="100,100">&quot;The good news is more akin to complicated news, but I can&#39;t resist a classic good-news-bad-news choice, you know? It&#39;s the order that keeps me coming back to it: does the choice matter? Does it change your perception of the good news to receive it first? Are you distracted by the bad news that you know is still coming? Will the bad news be better or worse coming second?&quot; The driver shakes his head, maybe at himself or maybe to snap himself out of something. &quot;Sorry, it&#39;s been a long evening, if you know what I mean,&quot; he looks at you in the rear view conspiratorially, but you have no idea what he means.
+[[&quot;Bad News.&quot;|Prologue 5.2]]</tw-passagedata><tw-passagedata pid="8" name="Prologue 5.1" tags="" position="150,1350" size="100,100">&quot;The good news is more akin to complicated news, but I can&#39;t resist a classic good-news-bad-news choice, you know? It&#39;s the order that keeps me coming back to it: does the choice matter? Does it change your perception of the good news to receive it first? Are you distracted by the bad news that you know is still coming? Will the bad news be better or worse coming second?&quot; The driver shakes his head, maybe at himself or maybe to snap himself out of something. &quot;Sorry, it&#39;s been a long evening, if you know what I mean,&quot; he looks at you in the rear view conspiratorially, but you have no idea what he means.
 
 &quot;Anyway, the complicated news is that the afterlife is not what you think. At least, probably not. But also, maybe! Sorry, I&#39;m burying the lede. You are not in the &#39;afterlife,&#39;&quot; the driver lifts one hand to make air quotes. &quot;You are currently post-life but pre-afterlife. There&#39;s a metaphorical line to actually move onto whatever you think happens next. And I don&#39;t know how long you&#39;ll be in that line. It might be a single moment, and it might be an eternity; everyone moves through the line in their own time.&quot;
 
-[[&quot;... I&#39;m dead.&quot;|Prologue 5.3]]</tw-passagedata><tw-passagedata pid="9" name="Prologue 5.2" tags="" position="1025,1150" size="100,100">&quot;The bad news is that you&#39;re dead.&quot; The driver says this with sorrowful sincerity. The swirling fog outside and the lack of details to the surrounding world take on a more ominous feeling. You&#39;re unsure of how long you&#39;ve been in the car, but you&#39;re certain the sun hasn&#39;t changed its position on the horizon. You rack your brain trying to remember how you got in this car. Or what happened before today. What even is a day? You suddenly realize you&#39;re not breathing. You take in a shuddering breath and the rush hurts, deadening your head and letting a tear out.
+[[&quot;... I&#39;m dead.&quot;|Prologue 5.3]]</tw-passagedata><tw-passagedata pid="9" name="Prologue 5.2" tags="" position="275,1350" size="100,100">&quot;The bad news is that you&#39;re dead.&quot; The driver says this with sorrowful sincerity. The swirling fog outside and the lack of details to the surrounding world take on a more ominous feeling. You&#39;re unsure of how long you&#39;ve been in the car, but you&#39;re certain the sun hasn&#39;t changed its position on the horizon. You rack your brain trying to remember how you got in this car. Or what happened before today. What even is a day? You suddenly realize you&#39;re not breathing. You take in a shuddering breath and the rush hurts, deadening your head and letting a tear out.
 
 Barely audible above the din of nothing in your head, the driver snaps you out of your spiral, &quot;Or if you wanted to be dead, congratulations. I have only good news for you.&quot;
 
-[[&quot;What&#39;s the good news?&quot;|Prologue 5.4]]</tw-passagedata><tw-passagedata pid="10" name="Prologue 5.3" tags="" position="900,1275" size="100,100">&quot;I&#39;m sorry, ($playerName).&quot; And he means it too.
+[[&quot;What&#39;s the good news?&quot;|Prologue 5.4]]</tw-passagedata><tw-passagedata pid="10" name="Prologue 5.3" tags="" position="100,1475" size="100,100">&quot;I&#39;m sorry, $playerName.&quot; And he means it too.
 
 The swirling fog outside and the lack of details to the surrounding world take on a more ominous feeling. You&#39;re unsure of how long you&#39;ve been in the car, but you&#39;re certain the sun hasn&#39;t changed its position on the horizon. You rack your brain trying to remember how you got in this car. Or what happened before today. What even is a day? You suddenly realize you&#39;re not breathing. You take in a shuddering breath and the rush hurts, deadening your head and letting a tear out.
 
@@ -77,7 +82,7 @@ The driver turns glances at you briefly in the rear view mirror, and you notice 
 
 &quot;Are you somebody famous?&quot;
 
-[[&quot;No.&quot;|Prologue 6]]</tw-passagedata><tw-passagedata pid="11" name="Prologue 5.4" tags="" position="1025,1275" size="100,100">&quot;The good news is more akin to complicated news, but I can&#39;t resist a classic good-news-bad-news choice, you know? It&#39;s the order that keeps me coming back to it: does the choice matter? Does it change your perception of the good news to hear it now? Of course you&#39;re still thinking about the bad news. Will this even come off as anything but bad news now?&quot; The driver shakes his head, maybe at himself or maybe to snap himself out of something. &quot;Sorry, it&#39;s been a long evening, if you know what I mean,&quot; he looks at you in the rear view conspiratorially, but you have no idea what he means.
+[[&quot;No.&quot;|Prologue 6]]</tw-passagedata><tw-passagedata pid="11" name="Prologue 5.4" tags="" position="250,1475" size="100,100">&quot;The good news is more akin to complicated news, but I can&#39;t resist a classic good-news-bad-news choice, you know? It&#39;s the order that keeps me coming back to it: does the choice matter? Does it change your perception of the good news to hear it now? Of course you&#39;re still thinking about the bad news. Will this even come off as anything but bad news now?&quot; The driver shakes his head, maybe at himself or maybe to snap himself out of something. &quot;Sorry, it&#39;s been a long evening, if you know what I mean,&quot; he looks at you in the rear view conspiratorially, but you have no idea what he means.
 
 &quot;Anyway, the complicated news is that the afterlife is not what you think. At least, probably not. But also, maybe! Sorry, I&#39;m burying the lede. You are not in the &#39;afterlife,&#39;&quot; the driver lifts one hand to make air quotes. &quot;You are currently post-life but pre-afterlife. There&#39;s a metaphorical line to actually move onto whatever you think happens next. And I don&#39;t know how long you&#39;ll be in that line. It might be a single moment, and it might be an eternity; everyone moves through the line in their own time.&quot;
 
@@ -85,7 +90,7 @@ The driver turns glances at you briefly in the rear view mirror, and you notice 
 
 &quot;Are you somebody famous?&quot;
 
-[[&quot;No.&quot;|Prologue 6]]</tw-passagedata><tw-passagedata pid="12" name="Prologue 6" tags="" position="900,1400" size="100,100">&quot;That&#39;s good.&quot;
+[[&quot;No.&quot;|Prologue 6]]</tw-passagedata><tw-passagedata pid="12" name="Prologue 6" tags="" position="175,1600" size="100,100">&quot;That&#39;s good.&quot;
 
 The car begins to slow down a little, though it&#39;s hard to tell.
 
@@ -97,26 +102,26 @@ The car begins to slow down a little, though it&#39;s hard to tell.
 
 You&#39;re almost there as the main building begins to loom larger and taller. But on the side of the road, the first, single story of a building bereft of windows rises. It stretches for several seconds before four stories suddenly attach, windows now present. Some lit, some dark. This stands for the same stretch as the first story. Now nine stories. Now sixteen. Now twenty five. Now beyond where you can see, leaning your head towards the window. Coming slower and slower as the car approaches.
 
-[[&quot;Do I have any luggage?&quot;|Prologue 7]]</tw-passagedata><tw-passagedata pid="13" name="Prologue 7" tags="" position="900,1525" size="100,100">&quot;Everything you need will be provided. Or so I&#39;ve been told. So, no.&quot;
+[[&quot;Do I have any luggage?&quot;|Prologue 7]]</tw-passagedata><tw-passagedata pid="13" name="Prologue 7" tags="" position="75,1725" size="100,100">&quot;Everything you need will be provided. Or so I&#39;ve been told. So, no.&quot;
 
 As you pull towards the porte-cochère, another car pulls out of it. A tall figure - you can only make out its shape in the fog - walks up the small stairs and towards the spinning door.
 
 The car parks in front of the Grand Hotel.
 
-As your hand reaches for the handle, the driver offers, &quot;Good luck, ($playerName). I hope you cherish every moment of your stay, and I hope even more there aren&#39;t too many moments to cherish.&quot;
+As your hand reaches for the handle, the driver offers, &quot;Good luck, $playerName. I hope you cherish every moment of your stay, and I hope even more there aren&#39;t too many moments to cherish.&quot;
 
 The metal handle is cold to the touch despite it being a neutral temperature in the car. Have door handles always been this heavy?
 
-[[Leave|Chapter 1.1]]</tw-passagedata><tw-passagedata pid="14" name="Chapter 1.1" tags="" position="500,1650" size="100,100">The tall, blonde woman - lighting a cigarette beside the massive, revolving entrance and wearing an identical suit to the one you are - is the //second// thing you notice.
+[[Leave|Chapter 1]]</tw-passagedata><tw-passagedata pid="14" name="Chapter 1.1" tags="" position="500,400" size="100,100">The tall, blonde woman - lighting a cigarette beside the massive, revolving entrance and wearing an identical suit to the one you are - is the //second// thing you notice.
 
-The first, is the massive building the covers your entire field of vision. Up close, you can see that the first floor, which is 20 feet tall, is made of grey brick. To either side of the entrance, massive awnings cover massive windows and stretch as far as you can see. Above the first floor, identical rows of windows stand out from the smooth grey wall. Dozens of floors up, green-patinaed copper tiles form a small roof where the building narrows to support the weight of the floors above it.
+The first, is the massive building that covers your entire field of vision. Up close, you can see that the first floor, which is 20 feet tall, is made of grey brick. To either side of the entrance, massive awnings cover massive windows and stretch as far as you can see. Above the first floor, identical rows of windows stand out from the smooth grey wall. Dozens of floors up, green-patinaed copper tiles form a small roof where the building narrows to support the weight of the floors above it.
 
-Without the distance of fog and car roof above your head you can now see the dot-like lights of windows that cover the building like a dim child&#39;s Lite Brite. As you crane your neck upwards, the sight of the dots extending as far as you can see begins to induce a sense of vertigo in you. Looking back down at the ground and breathing a little heavier than you were, you hear:
+Without the distance of fog and car roof above your head you can now see the dot-like lights of windows that cover the building like an unimaginative child&#39;s Lite Brite. As you crane your neck upwards, the sight of the dots extending as far as you can see begins to induce a sense of vertigo in you. Looking back down at the ground and breathing a little heavier than you were, you hear:
 
 &quot;It goes to infinity.&quot;
 
 [[&quot;Huh?&quot;|Chapter 1.2]]
-[[Remain silent.|Chapter 1.2]]</tw-passagedata><tw-passagedata pid="15" name="Chapter 1.2" tags="" position="775,1775" size="100,100">The woman has her hand behind her head, pausing while brushing her hair backwards. She takes a long drag on the cigarette, holds her breath, releases her hair, takes the cigarette into her fingers, and exhales.
+[[Remain silent.|Chapter 1.2]]</tw-passagedata><tw-passagedata pid="15" name="Chapter 1.2" tags="" position="500,525" size="100,100">The woman has her hand behind her head, pausing while brushing her hair backwards. She takes a long drag on the cigarette, holds her breath, releases her hair, takes the cigarette into her fingers, and exhales.
 
 &quot;That&#39;s what my driver said anyway... Did you have a driver?&quot;
 
@@ -130,7 +135,7 @@ There&#39;s a small pause. The woman flicks ash off the cigarette. She smiles.
 
 You both laugh, and it feels nice. Like being alive.
 
-[[&quot;What are you doing outside?&quot;|Chapter 1.3]]</tw-passagedata><tw-passagedata pid="16" name="Chapter 1.3" tags="" position="775,1900" size="100,100">&quot;Smoking,&quot; she offers, as she takes another drag. You know she knows what you mean, so you&#39;re happy to wait.
+[[&quot;What are you doing outside?&quot;|Chapter 1.3]]</tw-passagedata><tw-passagedata pid="16" name="Chapter 1.3" tags="" position="500,650" size="100,100">&quot;Smoking,&quot; she offers, as she takes another drag. You know she knows what you mean, so you&#39;re happy to wait.
 
 &quot;Do you remember how you died?&quot; she exhales.
 
@@ -146,7 +151,7 @@ She takes another drag.
 
 &quot;That&#39;s a lot like how my life had been going honestly... What if they don&#39;t find me? What if my car and body is swept out into the ocean? What if it gets sucked into the mud of the river, all the way down?&quot;
 
-[[&quot;Does it matter if they find your body?&quot;|Chapter 1.4]]</tw-passagedata><tw-passagedata pid="17" name="Chapter 1.4" tags="" position="775,2025" size="100,100">You realize it&#39;s a personal question after you&#39;ve already asked it. It&#39;s not so much an invasive question as it is answerable only by oneself.
+[[&quot;Does it matter if they find your body?&quot;|Chapter 1.4]]</tw-passagedata><tw-passagedata pid="17" name="Chapter 1.4" tags="" position="500,775" size="100,100">You realize it&#39;s a personal question after you&#39;ve already asked it. It&#39;s not so much an invasive question as it is answerable only by oneself.
 
 &quot;I mean, they have funerals for people who are never found all the time,&quot; you add.
 
@@ -162,7 +167,7 @@ She inhales the last of her cigarette. Out of the corner of your eye, an ashtray
 
 The words hang heavy in the air.
 
-[[&quot;You coming in?&quot;|Chapter 1.5]]</tw-passagedata><tw-passagedata pid="18" name="Chapter 1.5" tags="" position="775,2150" size="100,100">You glance at the revolving door. Figures dart about on the other side of the glass, but the pattern is indecipherable.
+[[&quot;You coming in?&quot;|Chapter 1.5]]</tw-passagedata><tw-passagedata pid="18" name="Chapter 1.5" tags="" position="500,900" size="100,100">You glance at the revolving door. Figures dart about on the other side of the glass, but the pattern is indecipherable.
 
 &quot;Think I&#39;m allowed to stay out here?&quot;
 
@@ -174,13 +179,13 @@ The woman sighs and shrinks inwardly.
 
 She makes a twirling motion with her finger, but you don&#39;t understand.
 
-&quot;Life. It&#39;s like a constrictor snake. You fight against it, and it takes all your strength to push back against the crush, but it just squeezes and squeezes. You reach out a hand to a friend, and life breaks your arm. You try to take a step forward, and life wrenches your leg out from under you. It bends you into impossible shapes. Twisted versions of yourself. You know everyone else is under the same pressure, but they look normal to you. But all your can see in yourself is the prey.&quot;
+&quot;Life. It&#39;s like a constrictor snake. Only it takes years. Your whole life. You&#39;re too young to recognize it and be afraid of it until it&#39;s already wrapped around you. You fight against it, and it takes all your strength to push back against the crush, but it just squeezes and squeezes. You reach out a hand to a friend, and life breaks your arm. You try to take a step forward, and life wrenches your leg out from under you. It bends you into impossible shapes. Twisted versions of yourself. You know everyone else is under the same pressure, but they look normal to you. But all your can see in yourself is the prey.&quot;
 
 She pats her suit pockets, looking for a cigarette or a lighter or a stiff drink or a gun or a lifebuoy. Shrugs.
 
 &quot;Maybe that&#39;s why it&#39;s called a mortal coil?&quot;
 
-[[Remain silent.|Chapter 1.6]]</tw-passagedata><tw-passagedata pid="19" name="Chapter 1.6" tags="" position="775,2275" size="100,100">&quot;My name is Caroline, by the way,&quot; she said, leaning away from the wall and into a handshake.
+[[Remain silent.|Chapter 1.6]]</tw-passagedata><tw-passagedata pid="19" name="Chapter 1.6" tags="" position="500,1025" size="100,100">&quot;My name is Caroline, by the way,&quot; she said, leaning away from the wall and into a handshake.
 
 &quot;$playerName.&quot;
 
@@ -191,13 +196,115 @@ Her shake is firm, but you can briefly smell the cigarette on her fingers.
 You both walk into the revolving door and into the Grand Hotel.
 
 
-\\[\\[To be continued.]]
-</tw-passagedata><tw-passagedata pid="20" name="Title" tags="" position="575,575" size="100,100">&#39;&#39;The Grand Hotel&#39;&#39;
+[[Next|Chapter 2]]
+</tw-passagedata><tw-passagedata pid="20" name="Title" tags="" position="150,50" size="100,100">&#39;&#39;The Grand Hotel&#39;&#39;
 
 by Duncan Gibbs
 
-[[Prologue|Prologue 1]]
-[[Chapter 1|Chapter 1.1]]</tw-passagedata></tw-storydata>
+&lt;blockquote&gt;&lt;i&gt;
+And I lived in the world of the spirit,
+the world of the gray rain,
+the lost, the remembered.
+
+Then suddenly the sun was shining.
+And time went on, even when there was almost none left.
+And the perceived became the remembered,
+the remembered, the perceived.
+
+- &lt;/i&gt;Author Unknown&lt;i&gt;
+&lt;/i&gt;&lt;/blockquote&gt;
+
+(Start at the Prologue)
+[[Prologue|Prologue]]
+[[Chapter 1|Chapter 1]]
+[[Chapter 2|Chapter 2]]</tw-passagedata><tw-passagedata pid="21" name="Chapter 1" tags="" position="500,275" size="100,100">&#39;&#39;Chapter 1&#39;&#39;
+
+[[Next|Chapter 1.1]] </tw-passagedata><tw-passagedata pid="22" name="Prologue" tags="" position="250,275" size="100,100">&#39;&#39;Prologue&#39;&#39;
+
+[[Next|Prologue 1]] </tw-passagedata><tw-passagedata pid="23" name="Chapter 2" tags="" position="800,275" size="100,100">&#39;&#39;Chapter 2&#39;&#39;
+
+[[Next|Chapter 2.1]]</tw-passagedata><tw-passagedata pid="24" name="Chapter 2.1" tags="" position="800,400" size="100,100">The pressure shift as the enormous door slides forward almost effortlessly nearly makes your ears pop. This only adds to the nauseating effect as you enter a lobby that appears to be simultaneously the size that it is and infinitely larger. You close your eyes and take a breath. Opening your eyes again, you see your pause has helped.
+
+The lobby looms large. The off white ceiling is two stories above you and vaults upwards in its center to make way for a massive chandelier that lights the entire room up. It consists of fake ropes - lights around steel - that curve downwards before swooping back up into the center leaving behind warm light. It dangles above a small waiting area with chairs and tables. You see some of them occupied, though you note that most are occupied by lone, shocked looking people.
+
+The floor is made of alternating streaks of checkerboard patterned tiles, and off whites tiles. The pattern is broken in the center by a fountain. The basin itself is quite large, and streams of water spray towards the center in a circle. The central pillar is quite small and featureless, which emphasizes what sits atop it. Three hands: one thin and long nearly extending to the edge of the fountain; the second, slightly shorter and much thicker; and the last heaviest and shortest of all. Despite the overwhelming evidence, it only dawns on you that it is a clock when realize the minute hand is moving.
+
+Caroline puts her hand on your shoulder, pointing to both sides of the lobby, &quot;It was your bright idea to head inside in the first place. Which should we try?&quot; You look and see that on either side of the room is a check in desk with a small line in front of it.
+
+[[&quot;Left.&quot;|Chapter 2.2.1]]
+[[&quot;Right.&quot;|Chapter 2.2.2]]</tw-passagedata><tw-passagedata pid="25" name="Chapter 2.2.1" tags="" position="800,525" size="100,100">In the sheer space of the auditoriumesque lobby, you and Caroline&#39;s shoulders practically touch. You make your way counterclockwise around the fountain and seated victims. For the first time, you look through the double doors on the far side of the room. They are tall and wide enough to see a massive dining hall on the other side. You can make out some people sitting at tables before you have to look away quickly. The parallax of the other room is all wrong and makes you feel lightheaded. You look at your feet for a step or two. The shoes aren&#39;t really your style - black oxfords, the perfect shoe for those who don&#39;t care about a sole/soul - but you manage to place one foot in front of the other.
+
+Slightly more confident than walking should make you, you look up, chin high. There&#39;s no line to get in. Two figures stand at the reception desk. A short, balding man in his early forties wearing an identical suit to yours stands in front of it. A placid figure overshadows him, figuratively and literally. A wall sized pillar of segmented light panels lights the reception area. As you get closer, you can hear that the man sounds upset.
+
+&quot;There has to be some mistake! You say that you can&#39;t run the numbers again. I respect that. But can&#39;t I make a different reservation, or maybe &#39;upgrade&#39; my existing one?&quot;
+
+&quot;I&#39;m terribly sorry, sir.&quot;
+
+&quot;Never mind your sorry. Let me see whoever&#39;s in charge.&quot;
+
+At this, the man pushed his finger into the top of the desk. The receptionist didn&#39;t notice.
+
+&quot;At least explain to me why the random //fuck// who was here before me got a 75 year reservation. Huh? Make it make sense to me! And if you can&#39;t then bring someone who can. Is that asshole tied for number one salesman at a Fortune 500 company? Is he a top donor to his state representative? Is he a fucking scratch golfer?!&quot;
+
+His voice breaks just for a moment, but it doesn&#39;t stop him.
+
+&quot;So what? It&#39;s all just gone in five years? The course records and memberships and deals and handshakes and jokes and night classes and drinks. No one finds an old picture of a drunken Christmas party. No one digs up my diploma. None of my friends-&quot;
+
+At this, he comes up short. His finger which had dug into the desk at each point went as limp as the man. The receptionist, unchanged and unfazed radiates absolute kindness. They place their hand on the man&#39;s and hand him a room key.
+
+&quot;Room 46352. I hope you enjoy your stay.&quot;
+
+The man runs his hands through his remaining hair a few times, pulls his suit forward by its lapels, and walks off towards the dizzying dining hall.
+
+[[Ring the bell.|Chapter 2.3]]
+[[&quot;Hello.&quot;|Chapter 2.3]]</tw-passagedata><tw-passagedata pid="26" name="Chapter 2.2.2" tags="" position="925,525" size="100,100">In the sheer space of the auditoriumesque lobby, you and Caroline&#39;s shoulders practically touch. You make your way counterclockwise around the fountain and seated victims. For the first time, you look through the double doors on the far side of the room. They are tall and wide enough to see a massive dining hall on the other side. You can make out some people sitting at tables before you have to look away quickly. The parallax of the other room is all wrong and makes you feel lightheaded. You look at your feet for a step or two. The shoes aren&#39;t really your style - black oxfords, the perfect shoe for those who don&#39;t care about a sole/soul - but you manage to place one foot in front of the other.
+
+Slightly more confident than walking should make you, you look up, chin high. There&#39;s no line to get in. Two figures stand at the reception desk. Behind it, backlit by an elliptical pillar as wide as it is tall, stands a fortified and fortifying figure. You get the sense that they are trying to comfort the devastated woman. She&#39;s middle aged and wears her brown hair in a small beehive. She is, of course, wearing the same suit as you and Caroline. Her southern accent is noticeable.
+
+&quot;I don&#39;t understand.&quot;
+
+&quot;Which part? The room service? The dining and swimming hours? The longterm-&quot;
+
+&quot;Eight hundred and nineteen years?&quot;
+
+&quot;That&#39;s correct, ma&#39;am.&quot;
+
+&quot;Eight hundred...&quot;
+
+The woman&#39;s head falls forward. In prayer?
+
+&quot;Why?&quot;
+
+&quot;Why what, ma&#39;am?&quot;
+
+&quot;Why me? That&#39;s too long. I&#39;m not famous or nothin&#39;. I was in the newspaper once for being a runner up in a pageant?&quot;
+
+She pauses.
+
+&quot;Do my kids or grandkids get famous or somethin&#39;?&quot;
+
+&quot;We don&#39;t know the future, ma&#39;am. I&#39;m sorry. You can receive updates about who remembers you during your stay, if you wish to.&quot;
+
+&quot;What if I don&#39;t want to?&quot;
+
+&quot;Don&#39;t want to receive remembrances?&quot;
+
+&quot;Don&#39;t want to wait eight hundred and nineteen years. Can I check out early?&quot;
+
+&quot;I&#39;m afraid not.&quot;
+
+&quot;Well, what if I just leave?&quot;
+
+&quot;You won&#39;t get very far...&quot;
+
+The woman looks skyward at this as if watching her escaping strength float away, but presumably only sees the pitiless waffled ceiling. Sliding the keycard off of the reception desk as if it weighed a ton, she stumbles off into the lobby to join the other shell shocked shapes seated around the ever spinning fountain.
+
+[[Ring the bell.|Chapter 2.3]]
+[[&quot;Hello.&quot;|Chapter 2.3]]</tw-passagedata><tw-passagedata pid="27" name="Chapter 2.3" tags="" position="850,675" size="100,100">Inhumanly unreadable, the receptionist greets you.
+
+&quot;Welcome to The Grand Hotel, $playerName.&quot;
+
+//To be continued...//</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
